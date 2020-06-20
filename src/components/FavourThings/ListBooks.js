@@ -26,7 +26,7 @@ class ListBooks extends Component {
                         <div key={project.id} className="boxOfListOfBooks" id={project.id}>
                             <div className="containerOfBooks" >
                                 <div className="imgAndTextOfBooks" >
-                                    <a href={project.linkToAlbum} target="_blank"><img src={project.imgOfProject} className={project.className}/></a>
+                                    <a href={project.linkToBook} target="_blank"><img src={project.imgOfProject} className={project.className}/></a>
                                 </div>
                             </div>
                         </div>
