@@ -32,7 +32,7 @@ class ListOfInspirations extends Component {
                     <NavLink to={targetPath}>
                         <div className="imgAndText">
                           <img src={project.imgOfProject} className="imgList"/>
-                          <div className="centered" style={{color:project.color}}><h1>{project.NameOfProject}</h1></div>
+                          <div className="centered"><h1>{project.NameOfProject}</h1></div>
                         </div>
                     </NavLink>
                     </div>
