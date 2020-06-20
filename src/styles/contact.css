@@ -1,0 +1,46 @@
+.Contact{
+    position: absolute;
+    width: 90%;
+    float: left;
+    margin-left: 100px;
+    z-index: 1;
+    background: transparent;
+}
+
+.contactImg{
+    width: 500px;
+    right: 125px;
+    position: absolute;
+}
+
+.contact h1{
+    font-size: 80px;
+    color: #ee281b;
+}
+
+.mailInContact{
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    letter-spacing: 3px;
+    margin-left: 50px;
+    font-size: 27px;
+    color: #ab1276;
+    font-family: 'Roboto Mono', monospace;
+}
+.mailInContact:hover{
+    color:#efbe03
+}
+
+@media only screen and (max-width: 730px) {
+    .Contact {
+        margin-left: 0px;
+    }
+    .ContactFoot {
+        margin-left: 0px;
+    }
+
+    .mailInContact {
+        letter-spacing: 0px;
+        margin-left: 0px;
+    }
+}

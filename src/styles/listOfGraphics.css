@@ -1,0 +1,65 @@
+.backgroundGraphics{
+    min-height: calc(100% - 120px);
+    width: 100%;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.6)),to(#4a1a1a));
+    background-image: linear-gradient(rgba(0,0,0,.6), #58191994, rgba(0,0,0,.6),#58191994);
+    overflow: hidden;
+    position: relative;
+}
+
+.TextToSegmentGraphics{
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    margin-left: 35px;
+}
+
+.ContainerForListsOfGraphics {
+    display: inline-block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.boxOfListOfGraphics{
+    width: 33%;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 0% 25px 0%;
+    background-color: transparent;
+}
+
+.containerOfGraphics {
+    position: relative;
+    text-align: center;
+}
+.containerOfGraphics a{
+    margin-left: 0 !important;
+    cursor: default !important;
+}
+.imgAndTextOfGraphics {
+    position: sticky;
+    z-index: 3;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.imgListOfGraphics{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.35s ease 0s;
+}
+.imgListOfGraphics:hover{
+    transform: translate(0,-6px);
+}
+@media only screen and (max-width: 850px){ 
+    .boxOfListOfGraphics{
+        width: 50% !important;
+    }
+}

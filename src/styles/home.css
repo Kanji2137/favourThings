@@ -1,0 +1,61 @@
+.WordInsParent{
+    background-color: #080808;
+    height: 865px;
+    padding-top: 15px;
+}
+.WordInsChild {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #ee2639;
+    border-radius: 5px;
+    border-style: dotted;
+    
+}
+.WordInsChild canvas{
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+}
+
+.TextBox{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.TextBox h1 {
+    width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Bangers', cursive;
+    color: #ef2a53;
+    background-image: -webkit-linear-gradient(92deg,#ef2a53,#feab3a); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+}
+
+.BallAnim{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.BallAnim canvas{
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+}
+
+@media only screen and (max-width: 1100px){
+    .WordInsParent{
+        height: 50%;
+        min-height: 450px;
+    }
+}
+@media only screen and (max-width: 1100px) and (max-height: 300px){
+    .WordInsParent{
+        height: 50%;
+        min-height: 450px;
+    }
+}

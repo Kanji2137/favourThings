@@ -1,0 +1,149 @@
+.backgroundBooks{
+    min-height: calc(100% - 120px);
+    width: 100%;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.6)),to(#4a1a1a));
+    background-image: linear-gradient(rgba(0,0,0,.6), #58194294, rgba(0,0,0,.6),#58194294)
+}
+
+.TextToSegmentBooks{
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    margin-left: 35px;
+}
+
+.ContainerForListsOfBooks {
+    display: inline-block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.boxOfListOfBooks{
+    width: 20%;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 0% 25px 0%;
+    background-color: transparent;
+}
+
+.containerOfBooks {
+    position: relative;
+    text-align: center;
+}
+.containerOfBooks a{
+    margin-left: 0 !important;
+    cursor: default !important;
+}
+
+.imgAndTextOfBooks{
+    position: sticky;
+    z-index: 3;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.imgListOfBooks{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.35s ease 0s;
+}
+.imgListOfBooks:hover{
+    transform: translate(0,-6px);
+}
+.imgListOfBooksSmall{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.35s ease 0s;
+}
+.imgListOfBooksSmall:hover{
+    transform: translate(0,-6px);
+}
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+.bottom-left h5{
+   color: #fff;
+   font-size: 20px;
+}
+
+.barOfListOfBooks{
+    width: 100%;
+    height: 70px;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    transition: all 0.35s ease 0s;
+    cursor: pointer;
+}
+
+.barOfListOfBooks:hover {
+    background-color: hsla(0,0%,100%,.1);
+}
+
+.titleBooks{
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: .015em;
+    color: #fff;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.authorBooks {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: .015em;
+    color: #fff;
+    margin-left: 40px;
+    float: left;
+}
+
+.TextOfBooksBar h4{
+    float: left;
+    margin-left: 100px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+.TextOfBooksBar h5{
+    position: absolute;
+}
+
+@media only screen and (max-width: 850px){ 
+    .bottom-left {
+        left: 0px;
+    }
+    .bottom-left h5{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: inherit;
+    }
+    h1{
+        font-size: 35px !important;
+    }
+    .boxOfListOfBooks {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 350px){ 
+    .titleBooks {
+        font-size: 16px;
+    }
+    .authorBooks {
+        font-size: 14px;
+    }
+}

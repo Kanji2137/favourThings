@@ -1,0 +1,138 @@
+.background{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.6)),to(#4a1a1a));
+    background-image: linear-gradient(rgba(0,0,0,.6), #38171794, rgba(0,0,0,.6),#381717);
+}
+
+.TextToSegmentMusic{
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    margin-left: 35px;
+}
+
+.ContainerForListsOfMusic {
+    display: inline-block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boxOfListOfMuisc{
+    width: 20%;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 0% 25px 0%;
+    background-color: transparent;
+}
+
+.containerOfMuisc {
+    position: relative;
+    text-align: center;
+}
+.containerOfMuisc a{
+    margin-left: 0 !important;
+    cursor: default !important;
+}
+
+.imgAndTextOfMuisc{
+    position: sticky;
+    z-index: 3;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    transition: all 0.35s ease 0s;
+}
+
+.imgAndTextOfMuisc:hover{
+    transform: translate(0,-6px);
+}
+
+.imgListOfMuisc{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+.bottom-left h5{
+   color: #fff;
+   font-size: 20px;
+}
+
+.barOfListOfMuisc {
+    width: 100%;
+    height: 70px;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    transition: all 0.35s ease 0s;
+    cursor: pointer;
+}
+
+.barOfListOfMuisc:hover {
+    background-color: hsla(0,0%,100%,.1);
+}
+.titleSongParent{
+
+}
+.titleSong {
+    overflow: hidden;
+    padding: 5px 0 0 10px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: .015em;
+    color: #fff;
+}
+
+.TextOfMuiscBar {
+    margin-top: 10px;
+    display: flow-root;
+}
+.TextOfMuiscBar h4{
+    float: left;
+    margin-left: 100px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+.TextOfMuiscBar h5{
+    position: absolute;
+}
+
+@media only screen and (max-width: 850px){ 
+    .bottom-left {
+        left: 0px;
+    }
+    .bottom-left h5{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: inherit;
+    }
+    h1{
+        font-size: 35px !important;
+    }
+    .boxOfListOfMuisc {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 350px){ 
+    .titleSong {
+        font-size: 16px;
+    }
+    .authorSong {
+        font-size: 14px;
+    }
+}

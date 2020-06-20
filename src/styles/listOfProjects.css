@@ -1,0 +1,94 @@
+.numbers {
+    color: #fff !important;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    z-index: -1;
+    position: absolute;
+    list-style-type: none;
+}
+
+.sizelistOfProjects{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.containerForLists{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+.boxOfList{
+    width: 50%;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 70px 50px 70px;
+    background-color: transparent;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+.container a{
+    margin-left: 0 !important;
+    cursor: default !important;
+}
+.imgAndText{
+    position: sticky;
+    z-index: 3;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    transition: all 0.35s ease 0s;
+    cursor: pointer;
+}
+.imgAndText:hover{
+    transform: translate(0,-6px);
+}
+.imgList{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    
+}
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centered h1{
+    min-width: 200px;
+    font-family: 'Merriweather', serif;
+    color: #ef2a53;
+    background-image: -webkit-linear-gradient(92deg,#ee2639,#222); 
+    /* #62a6ff #feab3a*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 1200px) {
+    .containerForLists {
+        width: 100%;
+    }
+    .boxOfList {
+        width: 100%;
+    }
+    .imgAndText {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 560px){
+    .containerForLists {
+        width: 100%;
+    }
+    .imgAndText {
+        width: 95%;
+    }
+}
