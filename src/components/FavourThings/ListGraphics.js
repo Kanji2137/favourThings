@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import ListOfGraphics  from '../../templateToList/ListOfGraphics';
-class listGraphics extends Component {
+import PropTypes from 'prop-types';
+
+class ListGraphics extends Component {
     render() {
         var len = 70;
         var numb = new Array(0);
@@ -12,15 +13,15 @@ class listGraphics extends Component {
         posX.push(Math.floor((Math.random() * 90) + 1)+'%');
         posY.push(Math.floor((Math.random() * 1400) + 100));
         }
-        listItems = numb.map((numb, x) =>
-        <li className="numbers" style={{left: posX[x], top: posY[x]}}>{numb}</li>
+        listItems = numb.map((n, x) =>
+        <li key={x} className="numbers" style={{left: posX[x], top: posY[x]}}>{n}</li>
         );
         return (
             <div className="backgroundGraphics">
                 <ul>{listItems}</ul>
                 <h1 className="TextToSegmentGraphics">My favourite graphics</h1>
                 <div className="ContainerForListsOfGraphics">
-                    {ListOfGraphics.map((project) => {
+                    {this.props.graphics.map((project) => {
                         return (
                         <div key={project.id} className="boxOfListOfGraphics" id={project.id}>
                             <div className="containerOfGraphics" >
@@ -38,4 +39,8 @@ class listGraphics extends Component {
     }
 }
 
-export default listGraphics; 
+ListGraphics.propTypes = {
+    graphics: PropTypes.array.isRequired
+};
+
+export default ListGraphics; 

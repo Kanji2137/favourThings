@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import legoBoy from '../img/legoBoy1.png'; 
+import legoBoy from '../../img/legoBoy1.png'; 
 
 class Contact extends Component {
     render() {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import WordIns from './elementsComp/WordIns'
-import ListOfInspirations from './elementsComp/ListOfInspirations'
+import WordIns from '../elementsToHomeWebsite/WordIns'
+import ListOfInspirations from '../elementsToHomeWebsite/ListOfInspirations'
 
 class Home extends Component {
   render() {
@@ -11,7 +11,7 @@ class Home extends Component {
             <WordIns style={{zIndex: "3"}}/>
           </div>
         </div>
-        <ListOfInspirations/>
+        <ListOfInspirations generalList={this.props.generalList}/>
       </div>
     )
   }

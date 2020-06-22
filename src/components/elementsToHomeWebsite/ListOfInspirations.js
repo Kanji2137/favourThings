@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import GeneralList  from '../../templateToList/GeneralList';
+import PropTypes from 'prop-types';
+
 import {
   NavLink
 } from "react-router-dom";
@@ -16,15 +17,15 @@ class ListOfInspirations extends Component {
       posX.push(Math.floor((Math.random() * 90) + 1)+'%');
       posY.push(Math.floor((Math.random() * 1400) + 1));
     }
-     listItems = numb.map((numb, x) =>
-      <li className="numbers" style={{left: posX[x], top: posY[x]}}>{numb}</li>
+     listItems = numb.map((n, x) =>
+      <li key={x} className="numbers" style={{left: posX[x], top: posY[x]}} >{n}</li>
     );
     return (
       <div>
        <div className="sizeListOfProjects" id="listOfProj">
           <ul>{listItems}</ul>
           <div className="containerForLists">
-              {GeneralList.map((project) => {
+              {this.props.generalList.map((project) => {
                   const targetPath = `/${project.path}`
                 return (
                   <div key={project.id} className="boxOfList" id={project.id}>
@@ -46,4 +47,8 @@ class ListOfInspirations extends Component {
   }
 }
     
+ListOfInspirations.propTypes = {
+  generalList: PropTypes.array.isRequired
+};
+
 export default ListOfInspirations;

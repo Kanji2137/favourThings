@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ListOfBooks  from '../../templateToList/ListOfBooks';
+import PropTypes from 'prop-types';
 
 class ListBooks extends Component {
     render() {
@@ -13,15 +13,15 @@ class ListBooks extends Component {
         posX.push(Math.floor((Math.random() * 90) + 1)+'%');
         posY.push(Math.floor((Math.random() * 1400) + 1));
         }
-        listItems = numb.map((numb, x) =>
-        <li className="numbers" style={{left: posX[x], bottom: posY[x]}}>{numb}</li>
+        listItems = numb.map((n, x) =>
+        <li key={x} className="numbers" style={{left: posX[x], bottom: posY[x]}}>{n}</li>
         );
         return (
             <div className="backgroundBooks">
                 <ul>{listItems}</ul>
                 <h1 className="TextToSegmentBooks">My favourite books</h1>
                 <div className="ContainerForListsOfBooks">
-                    {ListOfBooks.map((project) => {
+                    {this.props.books.map((project) => {
                         return (
                         <div key={project.id} className="boxOfListOfBooks" id={project.id}>
                             <div className="containerOfBooks" >
@@ -37,5 +37,9 @@ class ListBooks extends Component {
         );
     }
 }
+
+ListBooks.propTypes = {
+    books: PropTypes.array.isRequired
+};
 
 export default ListBooks;
